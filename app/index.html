@@ -2,10 +2,11 @@
     <head>
         <meta charset="utf-8">
         <script type="text/javascript" src="app.js" charset="utf-8"></script>
+        <script type="text/javascript" src="GridTemplateFactory.js" charset="utf-8"></script>
         <!-- Example uses font awesome icons -->
         <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
-        <link href="resources/ag-grid.css" rel="stylesheet">
-        <link href="resources/theme-fresh.css" rel="stylesheet">
+        <link href="resources/css/ag-grid.css" rel="stylesheet">
+        <link href="resources/css/theme-fresh.css" rel="stylesheet">
 
     </head>
 
@@ -19,7 +20,7 @@
 
     <body>
         <div id="myAppContainer" ng-controller="TestCtrl">
-            <ng-react-grid datasource="datasource" signaller="gridSignaller"></ng-react-grid>
+            <ng-react-grid datasource="datasource" signaller="gridSignaller" watch-depth="collection"></ng-react-grid>
         </div>
     </body>
 

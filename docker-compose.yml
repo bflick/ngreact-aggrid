@@ -1,0 +1,14 @@
+app:
+  build: .
+  links:
+    - db
+  ports:
+    - "3000:3000"
+  volumes:
+    - .:/usr/src/app
+  environment:
+    - NODE_ENV=development # production for staging
+db:
+  image: mongo
+  ports:
+    - "27017:27017"
