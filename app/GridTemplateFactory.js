@@ -117,6 +117,7 @@
 	            // this is how you listen for events using gridOptions
 	            onModelUpdated: function onModelUpdated() {
 	                console.log('event onModelUpdated received');
+	                this.columnApi.autoSizeColumns();
 	            },
 	            rowBuffer: 10,
 	            rowModelType: "pagination",

@@ -21,6 +21,7 @@
     <body>
         <div id="myAppContainer" ng-controller="TestCtrl">
             <select ng-model="groupByColumn">
+                <option value="None">
                 <option ng-repeat="col in datasource.cds.columnDefs[0].children track by col.field" value="{{col.field}}">
                     {{ col.headerName }}
                 </option>
